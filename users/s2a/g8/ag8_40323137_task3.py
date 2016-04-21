@@ -2,7 +2,7 @@
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-ag8_40323137_3 = Blueprint('ag8_40323137_3', __name__, url_prefix='/ag8_40323137', template_folder='templates')
+ag8_40323137_3 = Blueprint('ag8_40323137_3', __name__, url_prefix='/ag8_40323137_3', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
 @ag8_40323137_3.route('/task3')
@@ -19,16 +19,10 @@ shapedefs = window.shapeDefs
 obj2d = JSConstructor(window.Obj2D)
 cgo = cango("plotarea")
 
-cgo.setWorldCoords(-250, -250, 500, 500) 
+cgo.setWorldCoords(-450, -250, 600, 500) 
 
 # 決定要不要畫座標軸線
-cgo.drawAxes(0, 240, 0, 240, {
-    "strokeColor":"#aaaaaa",
-    "fillColor": "#aaaaaa",
-    "xTickInterval": 20,
-    "xLabelInterval": 20,
-    "yTickInterval": 20,
-    "yLabelInterval": 20})
+
         
 #cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
 
@@ -45,7 +39,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "fillColor": color,
             "border": border,
             "strokeColor": "tan",
-            "lineWidth": linewidth })
+            "lineWidth": linewidth  })
 
     # 複製 cmbr, 然後命名為 basic1
     basic1 = cmbr.dup()
@@ -90,9 +84,9 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
-    cgo.render(cmbr, x, y, 3, rot)
+    cgo.render(cmbr, x, y, 2, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "red", True, 4)
 
 '''
     return outstring

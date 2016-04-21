@@ -74,16 +74,19 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
     # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
+    cgo.render(cmbr, x, y, 3, rot)
 
-O(0, 0, 0, 0, 0,"lightyellow",True, 4)
+O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
 <!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
 <script type="text/python" src="/ag8_40323131/task1"></script>
 <script type="text/python" src="/ag8_40323123/task1"></script>
 <script type="text/python" src="/ag8_40323145/task1"></script>
 <script type="text/python" src="/ag8_40323143/task1"></script>
+<script type="text/python" src="/ag8_40323137/task1"></script>
 <script type="text/python" src="/ag8_40323154/task1"></script>
+<!-- 以協同方式加上 ag100 的  scrum-3 組員所寫的 task1 程式碼 -->
+
 
 </body>
 </html>

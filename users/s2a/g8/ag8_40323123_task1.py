@@ -2,12 +2,13 @@
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-ag8_40323131 = Blueprint('ag8_40323131', __name__, url_prefix='/ag8_40323131', template_folder='templates')
+ag8_40323123 = Blueprint('ag8_40323123', __name__, url_prefix='/ag8_40323123', template_folder='templates')
 
 # scrum1_task1 為完整可以單獨執行的繪圖程式
-@ag8_40323131.route('/task1')
+@ag8_40323123.route('/task1')
 def task1():
     outstring = '''
+
 from javascript import JSConstructor
 from browser import window
 import math
@@ -85,9 +86,9 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     #cmbr.appendPath(basic1)
     #cmbr.appendPath(basic2)
     #cmbr.appendPath(basic3)
-    #cmbr.appendPath(basic4)
-    cmbr.appendPath(basic5)
-    cmbr.appendPath(basic6)
+    cmbr.appendPath(basic4)
+    #cmbr.appendPath(basic5)
+    #cmbr.appendPath(basic6)
     #cmbr.appendPath(basic8)
     #cmbr.appendPath(basic9)
     # hole 為原點位置
@@ -99,7 +100,8 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 1, rot)
 
-O(0, 0, 0, 0, 0, "white", True, 4)
+O(0, 0, 0, 0, 0, "black", True, 4)
+
 '''
     return outstring
     
