@@ -1,5 +1,5 @@
 # 各組分別在各自的 .py 程式中建立應用程式 (第1步/總共3步)
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, make_response
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
 ag8 = Blueprint('ag8', __name__, url_prefix='/ag8', template_folder='templates')
@@ -78,18 +78,25 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 
 O(0, 0, 0, 0, 0,"lightyellow",True, 4)
 </script>
-<!-- 以協同方式加上 ag100 的 scrum-2 組員所寫的 task1 程式碼 -->
-<script type="text/python" src="/ag8_40323131/task1"></script>
-<script type="text/python" src="/ag8_40323123/task1"></script>
-<script type="text/python" src="/ag8_40323145/task1"></script>
-<script type="text/python" src="/ag8_40323143/task1"></script>
-<script type="text/python" src="/ag8_40323154/task1"></script>
-<script type="text/python" src="/ag8_40323137/task1"></script>
-
-
-</body>
-</html>
 '''
+    return outstring
+
+
+
+@ag8.route('/task1All_2')
+def task1All_2():
+    return "</body></html>"
+
+@ag8.route('/task1All_3')
+def task1All_3():
+    outstring = task1All()
+    outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323131/task1'></script>"
+    outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323137/task1'></script>"
+    outstring += "<script type='text/python' src='http://0428-40323143.rhcloud.com/ag8_40323143/task1'></script>"
+    outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323145/task1'></script>"
+    outstring += "<script type='text/python' src='http://042854-eerjthki.rhcloud.com/ag8_40323154/task1'></script>"
+    outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323123/task1'></script>"
+    outstring += task1All_2()
     return outstring
     
 

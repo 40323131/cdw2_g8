@@ -16,8 +16,8 @@
 <v t="leo.20160418094249.1"><vh>@edit ag8_40323131_task1d.py</vh></v>
 <v t="123.20160415203412.1"><vh>@edit ag8_40323131_task1b.py</vh></v>
 <v t="123.20160415230242.1"><vh>@edit ag8_40323131_task1c.py</vh></v>
-<v t="amd.20160314224120.1" a="E"><vh>@path ./../../../</vh>
-<v t="amd.20160314224203.1" a="E"><vh>@clean myflaskapp.py</vh>
+<v t="amd.20160314224120.1"><vh>@path ./../../../</vh>
+<v t="amd.20160314224203.1"><vh>@clean myflaskapp.py</vh>
 <v t="amd.20160314224223.1"><vh>myflaskapp declarations</vh></v>
 <v t="amd.20160314224223.2"><vh>index</vh></v>
 <v t="amd.20160314224223.3"><vh>user</vh></v>
@@ -33,19 +33,19 @@
 <v t="amd.20160314224239.1"><vh>@path templates</vh></v>
 </v>
 </v>
-<v t="54654.20160407094530.2" a="E"><vh>Recovered Nodes</vh>
+<v t="54654.20160407094530.2"><vh>Recovered Nodes</vh>
 <v t="54654.20160407094530.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
 <v t="54654.20160407094530.4"><vh>old:myflaskapp declarations</vh></v>
 <v t="54654.20160407094530.5"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
-<v t="leo.20160411105403.1" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20160411105403.1"><vh>Recovered Nodes</vh>
 <v t="leo.20160411105403.2"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
 <v t="leo.20160411105403.3"><vh>old:myflaskapp declarations</vh></v>
 <v t="leo.20160411105403.4"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
-<v t="leo.20160418112611.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20160418112611.2"><vh>Recovered Nodes</vh>
 <v t="leo.20160418112611.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
 <v t="leo.20160418112611.4"><vh>old:myflaskapp declarations</vh></v>
 <v t="leo.20160418112611.5"><vh>new:myflaskapp declarations</vh></v>
