@@ -32,6 +32,7 @@ app.register_blueprint(users.s2a.g8.ag8_40323123_task1.ag8_40323123)
 app.register_blueprint(users.s2a.g8.ag8_40323131_task1.ag8_40323131)
 app.register_blueprint(users.s2a.g8.ag8_40323154_task1.ag8_40323154)
 app.register_blueprint(users.s2a.g8.ag8_40323143_task1.ag8_40323143)
+app.register_blueprint(users.s2a.g8.ag8_40323137_task1.ag8_40323137)
 
 #g6
 app.register_blueprint(users.s2a.g6.ag6.ag6)
