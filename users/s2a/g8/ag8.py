@@ -53,49 +53,29 @@ cgo.drawAxes(0, 400, 0, 400, {
     "yTickInterval": 20,
     "yLabelInterval": 20})
         
-#cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
-
-deg = math.pi/180  
-def O(x, y, rx, ry, rot, color, border, linewidth):
-    # 旋轉必須要針對相對中心 rot not working yet
-    chamber = "M -6.8397, -1.4894 \
-                     A 0, 0, 0, 0, 0, 6.8397, -1.4894 \
-                     A 0, 0, 0, 0, 0, 6.8397, -18.511 \
-                     A 0, 0, 0, 0, 0, -6.8397, -18.511 \
-                     A 0, 0, 0, 0, 0, -6.8397, -1.4894 z"
-    cgoChamber = window.svgToCgoSVG(chamber)
-    cmbr = cobj(cgoChamber, "SHAPE", {
-            "fillColor": color,
-            "border": border,
-            "strokeColor": "tan",
-            "lineWidth": linewidth })
-
-
-    # 表示放大 3 倍
-    #cgo.render(cmbr, x, y, 3, rot)
-    # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
-
-O(0, 0, 0, 0, 0,"lightyellow",True, 4)
+        
+        
 </script>
+
+
 '''
     return outstring
 
 
 
-@ag8.route('/task1All_2')
-def task1All_2():
+@ag8.route('/task1All_tail')
+def task1All_tail():
     return "</body></html>"
 
 @ag8.route('/task1All_3')
 def task1All_3():
     outstring = task1All()
     outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323131/task1'></script>"
-    outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323137/task1'></script>"
+    outstring += "<script type='text/python' src='http://python40323145-ds77317.rhcloud.com/ag8_40323145/task1'></script>"
     outstring += "<script type='text/python' src='http://0428-40323143.rhcloud.com/ag8_40323143/task1'></script>"
-    outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323145/task1'></script>"
+    outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323137/task1'></script>"
+    outstring += "<script type='text/python' src='http://dwa-40323123.rhcloud.com/ag8_40323123/task1'></script>"
     outstring += "<script type='text/python' src='http://042854-eerjthki.rhcloud.com/ag8_40323154/task1'></script>"
-    outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323123/task1'></script>"
-    outstring += task1All_2()
+    outstring += task1All_tail()
     return outstring
     
