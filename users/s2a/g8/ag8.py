@@ -73,7 +73,7 @@ def task1All_3():
     outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323131/task1'></script>"
     outstring += "<script type='text/python' src='http://python40323145-ds77317.rhcloud.com/ag8_40323145/task1'></script>"
     outstring += "<script type='text/python' src='http://0428-40323143.rhcloud.com/ag8_40323143/task1'></script>"
-    outstring += "<script type='text/python' src='http://0426-2014w11.rhcloud.com/ag8_40323137/task1'></script>"
+    outstring += "<script type='text/python' src='http://ag8-40323137.rhcloud.com/ag8_40323137/task1'></script>"
     outstring += "<script type='text/python' src='http://dwa-40323123.rhcloud.com/ag8_40323123/task1'></script>"
     outstring += "<script type='text/python' src='http://042854-eerjthki.rhcloud.com/ag8_40323154/task1'></script>"
     outstring += task1All_tail()
